@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Top from './Header';
-import Searchbar from './SearchBar';
+import SearchBar from './SearchBar';
 import DataList from './DataList';
 
 const App = () => {
     return (
             <div className="ui container">
                 <Top        />
-                <Searchbar  />
+                <SearchBar  />
                 <DataList   />
             </div>
     )
@@ -16,11 +16,13 @@ const App = () => {
 
 export default App
 
-// #TODO Major - show DataList with map
-// #TODO Major - Switch from Seaarchbar to checkboxes/radioButtons
-// #TODO Major - Add and initialize DetailCards
+// #TODO MAJOR  - show DataList with map
+// #TODO MAJOR  - Switch from Seaarchbar to checkboxes/radioButtons
+// #TODO MAJOR  - Add and initialize DetailCards
 
-// #TODO minor - Add impressum
+// #TODO Medium - SearchBar on top of DataOverview to search for names with help of regEX
+
+// #TODO minor  - Add impressum
 
 
 /*
