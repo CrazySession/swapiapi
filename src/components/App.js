@@ -17,7 +17,9 @@ const App = () => {
 export default App
 
 // #TODO Major - show DataList with map
+// #TODO Major - Switch from Seaarchbar to checkboxes/radioButtons
 // #TODO Major - Add and initialize DetailCards
+
 // #TODO minor - Add impressum
 
 
@@ -27,7 +29,7 @@ export default App
 
     Header
 
-    SearchBar
+    SearchBar ---> later Checkboxes/RadioButtons
 
     DataOverview
     DetailCard - swapping with DataOverview
