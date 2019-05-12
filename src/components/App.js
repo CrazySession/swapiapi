@@ -16,14 +16,22 @@ const App = () => {
 
 export default App
 
+// #TODO Major - show DataList with map
+// #TODO Major - Add and initialize DetailCards
+// #TODO minor - Add impressum
+
 
 /*
-<div>
-<ul>
-<li>Header</li>
-<li>SearchBar</li>
-<li>DataOverview</li>
-<li>DetailCard - swapping with DataOverview</li>
-<li>Impressum</li>
-</ul>
-</div>*/
+
+    ### Programm Structure ###
+
+    Header
+
+    SearchBar
+
+    DataOverview
+    DetailCard - swapping with DataOverview
+
+    Impressum
+
+*/
