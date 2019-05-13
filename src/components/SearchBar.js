@@ -15,7 +15,7 @@ class SearchBar extends React.Component{
     getUser = async (term) => {
         try {
             const response = await axios.get('https://swapi.co/api/' + term + '/');
-            console.log(response);
+            console.log(response.data.results);
         } catch (error) {
             console.error(error);
         }
