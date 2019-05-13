@@ -2,9 +2,11 @@ import React from 'react';
 
 import axios from 'axios';
 
+import DataList from './DataList';
+
 
 class SearchBar extends React.Component{
-    state = {selectedOption: 'films'};
+    state = {selectedOption: 'films', result : [] };
 
     onFormSubmit = (event) => {
         event.preventDefault();
@@ -16,6 +18,7 @@ class SearchBar extends React.Component{
         try {
             const response = await axios.get('https://swapi.co/api/' + term);
             console.log(response.data.results);
+            this.setState({ result : response.data.results});
         } catch (error) {
             console.error(error);
         }
@@ -58,6 +61,7 @@ class SearchBar extends React.Component{
                 </fieldset>
                 <button className="ui primary button">Chose</button>
             </form>
+            <DataList   results={this.state.result}/>
         </div>
     )
 }}
