@@ -61,7 +61,7 @@ class SearchBar extends React.Component{
                 </fieldset>
                 <button className="ui primary button">Chose</button>
             </form>
-            <DataList   results={this.state.result}/>
+            <DataList   results={this.state.result} selectedOption={this.state.selectedOption}/>
         </div>
     )
 }}
