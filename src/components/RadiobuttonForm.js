@@ -1,8 +1,9 @@
 import React from 'react';
-
 import axios from 'axios';
 
 import DataList from './DataList';
+
+import '../css/radioButtonForm.css';
 
 
 class SearchBar extends React.Component{
@@ -26,7 +27,7 @@ class SearchBar extends React.Component{
     return (
         <div className="ui form">
             <form onSubmit={this.onFormSubmit}>
-                <p>May the force be with you!</p>
+                <h1>May the force be with you!</h1>
                 <fieldset>
                     {/*<legend>May the force be with you!</legend>*/}
                     <input  id="fm" type="radio" name="choice" defaultChecked="defaultChecked"

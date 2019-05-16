@@ -1,13 +1,15 @@
 import React from 'react';
 
 import Top from './Header';
-import SearchBar from './RadiobuttonForm';
+import RadioButtoForm from './RadiobuttonForm';
 
 const App = () => {
     return (
-            <div className="ui container">
+            <div>
                 <Top        />
-                <SearchBar  />
+                <div className="ui container">
+                    <RadioButtoForm  />
+                </div>
             </div>
     )
 };

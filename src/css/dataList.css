@@ -1,0 +1,9 @@
+#card {
+    float: left;
+    margin: 25px;
+}
+
+#card > div > div > div {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.2em;
+}

@@ -1,0 +1,25 @@
+div > form > h1{
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+div > form {
+    margin-bottom: 25px;
+}
+
+div > form > fieldset{
+    background-color: #e6970e;
+/*    border-radius: 20px;*/
+    margin: 20px 0;
+}
+
+div > form > fieldset > input{
+    margin: 5px;
+}
+
+div > form > fieldset > label{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Baloo Bhai', cursive;
+}
