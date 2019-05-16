@@ -8,7 +8,8 @@ const DataList = (props) => {
                 <div class="ui cards">
                     <div className="card">
                         <div className="content">
-                            <div className="header">{res.name}
+                            <div className="header">
+                                {res.name}
                                 <button style={{float:"right"}}>Info</button>
                             </div>
                         </div>
@@ -27,7 +28,8 @@ const DataList = (props) => {
                 <div class="ui cards">
                     <div className="card">
                         <div className="content">
-                            <div className="header">{res.title}
+                            <div className="header">
+                                {res.title}
                                 <button style={{float:"right"}}>Info</button>
                             </div>
                         </div>

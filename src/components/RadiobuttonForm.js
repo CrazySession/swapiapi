@@ -10,14 +10,12 @@ class SearchBar extends React.Component{
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.selectedOption);
         this.getUser(this.state.selectedOption);
     };
 
     getUser = async (term) => {
         try {
             const response = await axios.get('https://swapi.co/api/' + term);
-            console.log(response.data.results);
             this.setState({ result : response.data.results});
         } catch (error) {
             console.error(error);
