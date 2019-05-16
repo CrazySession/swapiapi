@@ -1,13 +1,13 @@
 import React from 'react';
 
 import '../css/dataList.css';
-//#TODO issue! leaves field blank after switching from films to other button or the other way round
+// issue! leaves field blank after switching from films to other button or the other way round --- fixed!
 const DataList = (props) => {
 
     if(props.selectedOption !== 'films'){
         const results = props.results.map((res) => {
             return (
-                <div id="card" class="ui cards">
+                <div id="card" className="ui cards">
                     <div className="card">
                         <div className="content">
                             <div className="header">
@@ -27,7 +27,7 @@ const DataList = (props) => {
         const results = props.results.map((res) => {
             // #TODO film no name property -> title instead
             return (
-                <div id="card" class="ui cards">
+                <div id="card" className="ui cards">
                     <div className="card">
                         <div className="content">
                             <div className="header">

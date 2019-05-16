@@ -7,7 +7,7 @@ import '../css/radioButtonForm.css';
 
 
 class SearchBar extends React.Component{
-    state = {selectedOption: 'films', result : [] };
+    state = {selectedOption: 'films',tempOption :'', result : [] };
 
     onFormSubmit = (event) => {
         event.preventDefault();
@@ -32,33 +32,39 @@ class SearchBar extends React.Component{
                     {/*<legend>May the force be with you!</legend>*/}
                     <input  id="fm" type="radio" name="choice" defaultChecked="defaultChecked"
                             value="films"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="fm">Films</label>
                     <input  id="pl" type="radio" name="choice"
                             value="people/"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="pl">People</label>
                     <input  id="pla" type="radio" name="choice"
                             value="planets"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="pla">Planets</label>
 
                     <br />
 
                     <input  id="sp" type="radio" name="choice"
                             value="species"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="sp">Species</label>
                     <input  id="st" type="radio" name="choice"
                             value="starships"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="st">Starships</label>
                     <input  id="ve" type="radio" name="choice"
                             value="vehicles"
-                            onChange={ (e) => { this.setState({selectedOption : e.target.value})} }/>
+                            onChange={(e) => { this.setState({tempOption : e.target.value})}}
+                            /*onChange={ (e) => { this.setState({selectedOption : e.target.value})} }*//>
                     <label htmlFor="ve">Vehicles</label>
                 </fieldset>
-                <button className="ui primary button">Chose</button>
+                <button onClick={(e) => {this.setState({ selectedOption : this.state.tempOption })}} className="ui primary button">Chose</button>
             </form>
             <DataList   results={this.state.result} selectedOption={this.state.selectedOption}/>
         </div>
