@@ -3,8 +3,13 @@
     margin: 25px;
 }
 
+#card > div{
+    background-color: #e6970e;
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.7);
+}
+
 #card > div > div > div {
     font-family: 'Baloo Bhai', cursive;
     font-size: 1.2em;
-    text-align: center;
+/*    text-align: center;*/
 }

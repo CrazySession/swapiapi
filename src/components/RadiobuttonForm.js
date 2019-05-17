@@ -7,7 +7,7 @@ import '../css/radioButtonForm.css';
 
 
 class SearchBar extends React.Component{
-    state = {selectedOption: 'films',tempOption :'', result : [] };
+    state = {selectedOption: 'films',tempOption :'', result : []};
 
     onFormSubmit = (event) => {
         event.preventDefault();
@@ -66,7 +66,7 @@ class SearchBar extends React.Component{
                 </fieldset>
                 <button onClick={(e) => {this.setState({ selectedOption : this.state.tempOption })}} className="ui primary button">Chose</button>
             </form>
-            <DataList   results={this.state.result} selectedOption={this.state.selectedOption}/>
+            <DataList   results={this.state.result} selectedOption={this.state.selectedOption} />
         </div>
     )
 }}
