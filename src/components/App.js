@@ -23,7 +23,7 @@ export default App
 
 // #TODO Medium - SearchBar on top of DataOverview to search for names with help of regEX
 // #TODO Medium - Store last request (maybe last two)
-// #TODO Medium - Add loading next to chose button
+// Medium - Add loading next to chose button -- DONE
 
 // #TODO minor  - Add impressum
 
