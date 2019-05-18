@@ -7,7 +7,7 @@ import '../css/radioButtonForm.css';
 
 
 class SearchBar extends React.Component{
-    state = {selectedOption: 'films',tempOption :'', result : []};
+    state = {selectedOption: '',tempOption :'', result : []};
 
     onFormSubmit = (event) => {
         event.preventDefault();

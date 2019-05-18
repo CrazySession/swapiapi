@@ -146,6 +146,10 @@ const DataList = (props) => {
         return <div>{results}</div>
     }
 
+    if (props.selectedOption === ''){
+        return <div></div>
+    }
+
 };
 
 export default DataList
