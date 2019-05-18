@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/swapiapi/static/css/main.6c9a56d7.chunk.css",
+    "main.js": "/swapiapi/static/js/main.4de3556f.chunk.js",
+    "main.js.map": "/swapiapi/static/js/main.4de3556f.chunk.js.map",
+    "runtime~main.js": "/swapiapi/static/js/runtime~main.9d2c3e58.js",
+    "runtime~main.js.map": "/swapiapi/static/js/runtime~main.9d2c3e58.js.map",
+    "static/js/2.8633e734.chunk.js": "/swapiapi/static/js/2.8633e734.chunk.js",
+    "static/js/2.8633e734.chunk.js.map": "/swapiapi/static/js/2.8633e734.chunk.js.map",
+    "index.html": "/swapiapi/index.html",
+    "precache-manifest.97d652bb8ae0871ded998e65513b6633.js": "/swapiapi/precache-manifest.97d652bb8ae0871ded998e65513b6633.js",
+    "service-worker.js": "/swapiapi/service-worker.js",
+    "static/css/main.6c9a56d7.chunk.css.map": "/swapiapi/static/css/main.6c9a56d7.chunk.css.map"
+  }
+}
