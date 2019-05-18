@@ -9,10 +9,6 @@ import '../css/radioButtonForm.css';
 class SearchBar extends React.Component{
     state = {selectedOption: '',tempOption :'', result : [], loaded : true};
 
-    componentDidUpdate(){
-        console.log(this.state.loaded);
-    }
-
     onFormSubmit = (event) => {
         event.preventDefault();
         this.getUser(this.state.selectedOption);
